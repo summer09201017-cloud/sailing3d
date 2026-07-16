@@ -22,6 +22,10 @@
 浮標門(rebuildFences → 障礙=礁石/浪頭)、voicePhrases(+SCRIPTURES 曉臻)、
 identity 件組(manifest/sw cache/storage 鍵/title/icon)。經文必先 cuv 查驗。
 
+⛪ 神學條款(07-17 拍板,平靜風浪 可4 專用):「住了吧」是敘事按鈕不是成敗 QTE——
+神蹟固定觸發,不因玩家手感而異;玩法張力放在撐船耐力(舀水/穩舵),得勝靠倚靠主
+(reverse-rpg-design 鐵則)。滿網(路5)同理:漁獲=主的話觸發,非手感獎勵。
+
 ## 本機地雷
 
 - vite preview 接管線會 SIGPIPE;地面貼片 rotation.order="YXZ";[hidden] 修正在 styles.css 底部。
