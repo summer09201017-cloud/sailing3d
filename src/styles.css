@@ -746,3 +746,6 @@ button.active {
 /* 競速小地圖(07-15 使用者點名):路線+紅我藍他+欄架點 */
 .mini-map { position: absolute; left: 14px; top: 118px; width: 190px; height: 140px; display: block; background: rgba(8,14,26,.72); border: 1px solid rgba(255,255,255,.22); border-radius: 12px; z-index: 30; pointer-events: none; }
 .mini-map[hidden] { display: none; }
+
+/* 防疫(07-18 批次):殼層面板 display:flex 會蓋過 UA 的 [hidden]{display:none} */
+[hidden] { display: none !important; }
