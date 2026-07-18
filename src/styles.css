@@ -703,7 +703,7 @@ button.active {
 .commentary-bar {
   position: fixed;
   left: 50%;
-  top: 72px;
+  top: 12.5rem; /* 07-18:移到記分板+訊息帶下方 */
   transform: translateX(-50%);
   max-width: min(86vw, 640px);
   padding: 8px 18px;
@@ -729,7 +729,7 @@ button.active {
   100% { opacity: 0; }
 }
 @media (max-width: 720px) {
-  .commentary-bar { top: 58px; font-size: 14px; padding: 6px 14px; }
+  .commentary-bar { top: 10.8rem; font-size: 14px; padding: 6px 14px; }
 }
 
 /* 07-14 拍板:大力道條(中下方,由左到右亮起,投影可讀) */
