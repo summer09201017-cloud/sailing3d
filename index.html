@@ -245,5 +245,16 @@
 
       <div class="power-panel-big" id="bigPower" hidden><span>轉舵時機</span><div class="big-track"><div class="big-fill" id="bigPowerFill"></div></div></div>
     <script type="module" src="/src/main.js"></script>
-  </body>
+    <script>
+// play-stats 打點(雙平台版:CF Pages/Netlify 都會打;只擋本機開發)
+window.psPing = function (suffix, t) {
+  try {
+    if (['localhost', '127.0.0.1'].includes(location.hostname)) return;
+    var q = 'g=sailing3d' + (suffix || '') + (t != null ? '&t=' + Math.round(t) : '');
+    navigator.sendBeacon?.('https://hfpc-play-stats.summer09201017.workers.dev/api/ping?' + q);
+  } catch (_) {}
+};
+window.psPing('');
+</script>
+</body>
 </html>
